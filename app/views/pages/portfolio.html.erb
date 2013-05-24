@@ -1,0 +1,167 @@
+<% content_for(:title) { "Portfolio" } %>
+
+<div class="hgroup">
+  <h1>Portfolio</h1>
+
+  <h2>This could be a showcase of your work! We are using the Isotope Jquery plugin to filter results.
+    This is the<strong> strict version</strong>, you should also check out the<a href="<%= gallery_path %>"><strong>
+    great Masonry version</strong></a>. All photos &copy; by
+    <a href="http://www.dimitragiannouka.com" target="_blank">Dimitra Giannouka</a>.</h2>
+  <ul class="breadcrumb pull-right">
+    <li><a href="<%= root_path %>">Home</a> <span class="divider">/</span></li>
+    <li class="active">Portfolio</li>
+  </ul>
+</div>
+<ul id="portfolio_filters">
+  <li><a href="#" data-filter="*">show all</a></li>
+  <li><a href="#" data-filter=".cat_artists">artists</a></li>
+  <li><a href="#" data-filter=".cat_people">people</a></li>
+  <li><a href="#" data-filter=".cat_travel">travel</a></li>
+  <li><a href="#" data-filter=".cat_poetic">poetic</a></li>
+</ul>
+<div id="portfolio_container" class="portfolio_strict row">
+  <div class="portfolio_item cat_travel span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/t5.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>travel</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_people span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/p4.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>people</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_artists span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/a3.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>artists</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_people span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/p3.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>people</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_travel span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/t3.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>travel</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_people span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/p1.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>people</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_poetic span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/b3.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>poetic</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_artists span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/a4.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>artists</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_travel span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/t4.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>travel</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_artists span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/a5.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>artists</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_poetic span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/b5.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>poetic</p>
+    </div>
+  </div>
+  <div class="portfolio_item cat_artists span4">
+    <div class="portfolio_photo" style="background-image:url(<%= asset_path("portfolio/a1.jpg") %>)">
+      <a href="<%= portfolio_item_path %>"> <i class="icon-2x icon-external-link"></i>
+
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </a></div>
+    <div class="portfolio_description">
+      <h3><a href="<%= portfolio_item_path %>">Lorem Ipsum</a></h3>
+
+      <p>artists</p>
+    </div>
+  </div>
+</div>

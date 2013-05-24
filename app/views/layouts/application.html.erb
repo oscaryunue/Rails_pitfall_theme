@@ -1,0 +1,117 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <title>Pitfall - <%= yield(:title) %></title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <!--[if IE 7]>
+    <%= stylesheet_link_tag "font-awesome-ie7.min" %>
+  <![endif]-->
+  <!-- Fav and touch icons -->
+  <%= javascript_include_tag "rails_pitfall_modernizer"  %>
+  <%= csrf_meta_tags %>
+  <%=  yield(:head) %>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png"> 
+</head>
+<body class="<%= yield(:body_class) %>">
+  <header>
+     <section id="block-toolbar">
+     </section>
+  <div class="container">
+    <a class="brand" href="<%= root_path %>">  <img src="<%= asset_path("rails_pitfall_logo.png") %>" width="90" height="90" alt="optional logo"> <span class="logo_title">[rails]<strong>PitFall</strong></span> <span class="logo_subtitle">A bootstrap + Jquery theme for Rails 3</span> </a> 
+  </div>
+
+        <!-- Navbar Start -->
+    <div class="navbar">
+      <div class="navbar-inner">
+    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="nb_left pull-left"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></span>  <span class="nb_right pull-right">Main Menu</span> </a>
+       <a class="brand" href="#"> </a>
+        <div class="nav-collapse collapse">
+          <ul class="nav pull-left">
+            <li class="<%= is_active?(['index', 'home_alternative']) %>"><%= link_to "Home", root_path %></li>
+            <li class="<%= is_active?(['about_us', 'page_alternative']) %>"><%= link_to "About Us", about_us_path %></li>
+            <li class="<%= is_active?('services') %>"><%= link_to "Services", services_path %></li>
+            <li class="<%= is_active?(['blog', 'single_post']) %>"><%= link_to "Blog", blog_path %></li>
+            <li class="<%= is_active?('contact') %>"><%= link_to "Contact", contact_path %></li>
+            <li class="<%= is_active?('Register') %>"><%= link_to "Sign In", register_path %></li>
+            <li>      <form class="navbar-search nav pull-right ">
+                      <input type="text" class="search-query" placeholder="Search"></form>
+            </li>
+            </li>
+          </ul>
+                </div> <!-- Navbar Inner -->
+
+      </div>
+    </div>
+</div>
+<!-- Navbar Ends -->
+</header>
+
+<div class="container">
+<%= yield(:post_header) %>
+</div>
+<div id="main">
+  <div class="container">
+    <%= yield %>
+  </div>
+  <footer>
+   
+    <section id="footer_teasers_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="span4 footer_teaser">
+            <h3>About us</h3>
+            <p>Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters.</p>
+            <p><i class="icon-map-marker"></i> 3 Athens street</p>
+            <p><i class="icon-phone"></i> (+30) 265-9987</p>
+            <p><i class="icon-print"></i> (+30) 9854-7855</p>
+            <p><i class="icon-envelope"></i> hello@railsstraptheme.com</p>
+          </div>
+          <div class="span4 footer_teaser">
+            <h3>Recent Blog Entries</h3>
+            <ul class="media-list">
+              <li class="media"> <a href="#" class="media-photo" style="background-image:url(<%= asset_path("portfolio/t5.jpg") %>)"></a> <a href="#"  class="media-date">03<span>JUL</span></a>
+                <h5 class="media-heading"><a href="#">Media heading, this is a title of a news...</a></h5>
+                <p>Fugiat dapibus, tellus ac cursus commodo, ut fermentum...</p>
+              </li>
+                <li class="media"> <a href="#" class="media-photo" style="background-image:url(<%= asset_path("portfolio/t5.jpg") %>)"></a> <a href="#"  class="media-date">15<span>JUL</span></a>
+                <h5 class="media-heading"><a href="#">Media heading, this is a title of a news...</a></h5>
+                <p>Fugiat dapibus, tellus ac cursus commodo, ut fermentum...</p>
+              </li>
+            </ul>
+          </div>
+          <div class="span4 footer_teaser">
+      <h3>Subscribe</h3>
+          <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>      
+        <form>
+              <input class="span3" type="text" placeholder="Your Email" name="subscribe">
+        <button class="btn btn-primary">Subscribe</button>
+      </form>   
+            <ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="span6"> Copyright &copy;2013 all rights reserved rails pitfall, https://rubygems.org/profiles/oscaryunue</div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+</div>
+<%= javascript_include_tag "application" %>
+</body>
+</html>

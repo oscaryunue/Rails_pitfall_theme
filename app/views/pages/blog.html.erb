@@ -1,0 +1,79 @@
+<% content_for(:title) {"Blog"} %>
+
+<section id="blog">
+  <div class="hgroup">
+    <h1>Blog, the News Section</h1>
+    <h2>Nullam eget tortor purus, id molestie sapien. In hac habitasse platea dictumst. Donec aliquet tellus enim, a tincidunt nulla.</h2>
+    <ul class="breadcrumb pull-right">
+      <li><a href="<%= root_path %>">Home</a> <span class="divider">/</span></li>
+      <li class="active">Blog</li>
+    </ul>
+  </div>
+  <div class="row">
+    <div id="leftcol" class="span8">
+      <article class="post">
+        <div class="post_header">
+          <h3 class="post_title"><a href="<%= single_post_path %>">Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters amet risus.</a></h3>
+          <div class="post_sub"><i class="icon-time"></i> March 1, 2013
+            <%= link_to(single_post_path(:anchor => "post_comments")) do %>
+                <i class="icon-comments-alt"></i> 6 comments
+            <% end %>
+          </div>
+        </div>
+        <div class="post_content">
+          <figure><a href="<%= single_post_path %>"><img alt="0" src="<%= asset_path("portfolio/p1.jpg") %>"></a></figure>
+          <p>Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters amet risus. Cras mattis cosi sectetut amet fermens etrsaters tum aecenas faucib sadips amets. Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters amet risus. Cras mattis cosi sectetut amet fermens etrsaters tum aecenas faucib sadips amets....</p>
+          <a href="single_post" class="btn btn-primary">Read More</a> </div>
+      </article>
+      <article class="post">
+        <div class="post_header">
+          <h3 class="post_title"><a href="<%= single_post_path %>">Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters amet risus.</a></h3>
+          <div class="post_sub"><i class="icon-time"></i> January 12, 2013 <i class="icon-comments-alt"></i> 0 comments </div>
+        </div>
+        <div class="post_content">
+          <figure><a href="<%= single_post_path %>"><img alt="0" src="<%= asset_path("portfolio/a1.jpg") %>"></a></figure>
+          <p>Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters amet risus. Cras mattis cosi sectetut amet fermens etrsaters tum aecenas faucib sadips amets. Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters amet risus. Cras mattis cosi sectetut amet fermens etrsaters tum aecenas faucib sadips amets....</p>
+          <a href="single_post" class="btn btn-primary">Read More</a> </div>
+      </article>
+      <div class="pagination pagination-centered">
+        <ul>
+          <li class="disabled"><a href="#">«</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">»</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="sidebar" class="span4">
+      <aside class="widget">
+        <h4>Blog Categories</h4>
+        <ul class="nav nav-tabs nav-stacked">
+          <li class="active"><a href="#">All</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </aside>
+      <aside class="widget">
+        <h4>Text Widget</h4>
+        <p>Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters amet risus. Cras mattis cosi sectetut amet fermens etrsaters tum aecenas faucib sadips amets.</p>
+      </aside>
+      <aside class="widget ads clearfix">
+        <h4>Ads</h4>
+        <a href="#"><img src="http://placehold.it/110" alt=""></a> <a href="#"><img src="http://placehold.it/110" alt=""></a> <a href="#"><img src="http://placehold.it/110" alt=""></a> <a href="#"><img src="http://placehold.it/110" alt=""></a> </aside>
+      <aside class="widget">
+        <h4>Tabs</h4>
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active"><a data-toggle="tab" href="#tags">Tags</a></li>
+
+        </ul>
+          <div id="tags" class="tab-pane fade active in" > <a class="label">Default</a> <a class="label label-success">Success</a> <a class="label label-warning">Warning</a> <a class="label label-important">Important</a> <a class="label label-info">Info</a> <a class="label label-inverse">Inverse</a> <a class="label">Default</a> <a class="label label-success">Success</a> <a class="label label-important">Important</a> <a class="label label-info">Info</a> <a class="label label-inverse">Inverse</a> <a class="label">Default</a> <a class="label label-success">Success</a> <a class="label label-success">Success</a> <a class="label label-warning">Warning</a> <a class="label label-important">Important</a> <a class="label label-warning">Warning</a> <a class="label label-warning">Warning</a> <a class="label label-important">Important</a> <a class="label label-info">Info</a> <a class="label label-inverse">Inverse</a> </div>
+           <div class="tab-content" id="myTabContent">
+
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>

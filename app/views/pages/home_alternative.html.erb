@@ -1,0 +1,71 @@
+<% content_for(:title) { "clean, multipurpose Ruby-Ready HTML template" } %>
+<% content_for(:body_class) {"boxed"} %>
+
+<% content_for(:post_header) do %>
+    <section id="slider_wrapper" class="container">
+      <div id="main_flexslider" class="flexslider">
+        <ul class="slides">
+          <li class="item"  style="background-image: url(<%= asset_path("s1.jpg") %>)">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>A <strong>rails</strong> theme<br>
+                  with<strong>components</strong> & <strong>design</strong>!</h1>
+                <p class="lead">already <strong>configurated. </strong>and can be used to build a multipurpose site. Feel free to fork or clone for your own project.</p>
+              </div>
+            </div>
+          </li>
+          <li class="item"  style="background-image: url(<%= asset_path("s2.jpg") %>)">
+            <div class="container">
+              <div class="carousel-caption">
+
+
+
+                <h1>easy <strong> to cutsomize</strong><br>
+                  powered with <strong>{LESS}</strong> syntax!</h1>
+                <p class="lead inverse"> A simple grid system for designing adaptive web­sites, all based on a single grid.</p>
+              </div>
+            </div>
+          </li>
+          <li class="item"  style="background-image: url(<%= asset_path("s3.jpg") %>)">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="inverse"><strong>subtle</strong> animations<br>
+                  & a fresh collapsing <strong>header effect</strong></h1>
+                <p class="lead">if you are looking for <a href="<%= services_path %>"><strong>a bold approach</strong></a> you will love the header effect,<br>
+                  but even if you like <a href=href="<%= elements_path %>"><strong>a more conservative feel</strong></a>, you can always try the boxed alternative!</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+<% end %>
+
+<section id="features_teasers_wrapper">
+  <div class="row">
+    <div class="span4 feature_teaser"> <img alt="responsive" src=<%= asset_path("responsive.png") %>>
+      <h3>Clean, Responsive Design</h3>
+      <p>A multipurpose but mainly<strong> business oriented</strong> design, built to serve as a foundation for your web projects. Suspendisse nec risus fermentum sapien congue fermentum sed at lorem.</p>
+    </div>
+    <div class="span4 feature_teaser"> <img alt="responsive" src=<%= asset_path("git.png") %>>
+      <h3>Based on Twitter Bootstrap</h3>
+      <p>The front-end development framework with a <strong>steep learning curve</strong>. It changes the way you develop sites. Suspendisse nec risus fermentum sapien congue fermentum sed at lorem.</p>
+    </div>
+    <div class="span4 feature_teaser"> <img alt="responsive" src=<%= asset_path("rubyonrails.png") %>>
+      <h3>Packed as a Ruby gem</h3>
+      <p>{rails}<strong>Pitfall</strong> comes packed as a gem file to help the Ruby on Rails developer save precious time. The plain HTML version <strong>is also included</strong>. Congue fermentum sed at lorem fermentum sed.</p>
+    </div>
+  </div>
+</section>
+
+
+               <div class="row">
+                  <div class="span4">
+                     <!-- First line -->             
+                  </div>
+                  <div class="span6">
+                <a class="btn btn-large"  href="<%= elements_path %>">View Elements</a> &nbsp; <em class="">–or–</em> &nbsp; <a class="btn btn-danger btn-large"  href="<%= elements_path %>">Get leatest Version</a>
+                  </div>
+              
+            
+

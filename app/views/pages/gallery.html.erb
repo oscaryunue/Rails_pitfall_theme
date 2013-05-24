@@ -1,0 +1,71 @@
+<% content_for(:title) {"Gallery"} %>
+
+<div class="hgroup">
+  <h1>Masonry portfolio <small>or</small> photo gallery</h1>
+  <h2>This is a mixture of portfolio items and photo gallery! We are using the Isotope Jquery plugin to filter results and Prettyphoto to open the lighbox.
+    This is the<strong> Masonry Version</strong>, you should also check out the <a href="<%= portfolio_path %>"><strong>strict version</strong></a>. All photos &copy; by <a href="http://www.dimitragiannouka.com" target="_blank">Dimitra Giannouka</a>.</h2>
+  <ul class="breadcrumb pull-right">
+    <li><a href="<%= root_path %>">Home</a> <span class="divider">/</span></li>
+    <li class="active">Portfolio</li>
+  </ul>
+</div>
+<ul id="portfolio_filters">
+  <li><a href="#" data-filter="*">show all</a></li>
+  <li><a href="#" data-filter=".cat_just_photos">just photos</a></li>
+  <li><a href="#" data-filter=".cat_projects">whole projects</a></li>
+</ul>
+<div id="portfolio_container" class="portfolio_masonry row">
+  <div class="portfolio_item cat_just_photos span4"> <a rel='prettyPhoto' href="<%= asset_path("portfolio/t2.jpg") %>"> <img src="<%= asset_path("portfolio/t2.jpg") %>" alt="The title of the photo">
+    <div class="overlay">
+      <div class="desc"> <i class="icon-2x icon-resize-full"></i> </div>
+    </div>
+  </a> </div>
+  <div class="portfolio_item cat_projects span4"> <a href="<%= portfolio_item_path %>"> <img src="<%= asset_path("portfolio/a6.jpg") %>" alt="Title of the project">
+    <div class="overlay">
+      <div class="desc"> <i class="icon-2x icon-external-link"></i>
+        <h3>Title of the project</h3>
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </div>
+    </div>
+  </a> </div>
+  <div class="portfolio_item cat_just_photos span4"> <a rel='prettyPhoto' href="<%= asset_path("portfolio/b3.jpg") %>"> <img src="<%= asset_path("portfolio/b3.jpg") %>" alt="The title of the photo">
+    <div class="overlay">
+      <div class="desc"> <i class="icon-2x icon-resize-full"></i> </div>
+    </div>
+  </a> </div>
+  <div class="portfolio_item cat_projects span4"> <a href="<%= portfolio_item_path %>"> <img src="<%= asset_path("portfolio/a4.jpg") %>" alt="Title of the project">
+    <div class="overlay">
+      <div class="desc"> <i class="icon-2x icon-external-link"></i>
+        <h3>Title of the project</h3>
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </div>
+    </div>
+  </a> </div>
+  <div class="portfolio_item cat_just_photos span4"> <a rel='prettyPhoto' href="<%= asset_path("portfolio/p4.jpg") %>"> <img src="<%= asset_path("portfolio/p4.jpg") %>" alt="The title of the photo">
+    <div class="overlay">
+      <div class="desc"> <i class="icon-2x icon-resize-full"></i> </div>
+    </div>
+  </a> </div>
+  <div class="portfolio_item cat_projects span4"> <a href="<%= portfolio_item_path %>"> <img src="<%= asset_path("portfolio/t4.jpg") %>" alt="Title of the project">
+    <div class="overlay">
+      <div class="desc"> <i class="icon-2x icon-external-link"></i>
+        <h3>Title of the project</h3>
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </div>
+    </div>
+  </a> </div>
+  <div class="portfolio_item cat_just_photos span4"> <a rel='prettyPhoto' href="<%= asset_path("portfolio/t3.jpg") %>"> <img src="<%= asset_path("portfolio/t3.jpg") %>" alt="The title of the photo">
+    <div class="overlay">
+      <div class="desc"> <i class="icon-2x icon-resize-full"></i> </div>
+    </div>
+  </a> </div>
+  <div class="portfolio_item cat_projects span4"> <a href="<%= portfolio_item_path %>"> <img src="<%= asset_path("portfolio/a3.jpg") %>" alt="Title of the project">
+    <div class="overlay">
+      <div class="desc"> <i class="icon-2x icon-external-link"></i>
+        <h3>Title of the project</h3>
+        <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+      </div>
+    </div>
+  </a>
+  </div>
+</div>
