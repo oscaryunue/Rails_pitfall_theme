@@ -1,3 +1,14 @@
+GIT
+  remote: git@github.com:oscaryunue/rails_pitfall_gem.git
+  revision: c78f604bfdfda0853500c64cf54d803548ce9e83
+  specs:
+    rails_pitfall (1.0.6)
+      flexslider (= 2.0.2)
+      jquery-rails (~> 2.0)
+      less-rails (~> 2.2)
+      prettyphoto-rails (= 0.2.0)
+      twitter-bootstrap-rails (~> 2.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -82,12 +93,6 @@ GEM
       activesupport (= 3.2.13)
       bundler (~> 1.0)
       railties (= 3.2.13)
-    rails_pitfall (1.0.5)
-      flexslider (= 2.0.2)
-      jquery-rails (~> 2.0)
-      less-rails (~> 2.2)
-      prettyphoto-rails (= 0.2.0)
-      twitter-bootstrap-rails (~> 2.2)
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -133,7 +138,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.13)
-  rails_pitfall (>= 1.0.5)
+  rails_pitfall (= 1.0.6)!
   sass-rails (~> 3.2.3)
   therubyracer
   uglifier (>= 1.0.3)
