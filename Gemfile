@@ -16,7 +16,7 @@ end
 gem 'jquery-rails'
 
 
-gem 'rails_pitfall', '1.0.6', :git => 'git@github.com:oscaryunue/rails_pitfall_gem.git'
+gem 'rails_pitfall', :git => 'git://github.com/oscaryunue/rails_pitfall_gem.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
