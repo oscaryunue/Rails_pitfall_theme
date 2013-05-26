@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:oscaryunue/rails_pitfall_gem.git
+  remote: git://github.com/oscaryunue/rails_pitfall_gem.git
   revision: c78f604bfdfda0853500c64cf54d803548ce9e83
   specs:
     rails_pitfall (1.0.6)
@@ -138,7 +138,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.13)
-  rails_pitfall (= 1.0.6)!
+  rails_pitfall!
   sass-rails (~> 3.2.3)
   therubyracer
   uglifier (>= 1.0.3)
